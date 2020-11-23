@@ -1,14 +1,14 @@
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
 root {
-    --a-color: #8fa09d;
+    --a-color: #106555;
     --visited-color: #1c056e;
     --a-active-color: #be26b2;
-    --button-background: #357b70;
-    --button-color: #e7f7f6;
+    --button-background: #28b64b;
+    --button-color: gold;
     --button-border-bottom: rgba(0, 0, 0, 0.3);
     --grid-item-background: lightgray;
-    --grid-background-color: #a5abb7;
+    --grid-background-color: gold;
 }
 
 * {
@@ -21,6 +21,7 @@ root {
     font-family: "Arial", regular;
     font-size: 30px;
     font-weight: 700;
+    color: black;
 }
 
 .body {
@@ -30,15 +31,14 @@ root {
     line-height: 1.6;
 }
 
+body {
+    background-color: whitesmoke;
+}
+
 .about {
     display: block;
     text-align: center;
 }
-
-
-/* background-color: var(--about-background-color);
-why is there a white bar 
-(gap) between header and the about section??  */
 
 .contact {
     padding-top: 50px;
@@ -59,19 +59,19 @@ header {
 }
 
 h1 {
-    font-family: "Roboto Slab", sans-serif;
+    font-family: "arial", standard;
     font-weight: 600;
     font-size: 30px;
 }
 
 h2 {
-    font-family: "Anton", sans-serif;
+    font-family: "arial", standard;
     font-size: 24px;
     font-weight: 700;
 }
 
 h3 {
-    font-family: "Bangers", cursive;
+    font-family: "arial", standard;
     font-size: 18px;
     font-weight: 700;
 }
@@ -85,18 +85,6 @@ p {
     line-height: 25px;
 }
 
-.profile__portrait {
-    float: left;
-    width: 250px;
-    margin-right: 40px;
-    border-radius: 50%;
-}
-
-
-/*
-don't continue here, doesnt make sense...
-*/
-
 .profile {
     max-width: 700px;
     margin: 0 auto;
@@ -104,11 +92,10 @@ don't continue here, doesnt make sense...
 
 .profile-pic {
     float: left;
-    width: 250px;
+    width: 400px;
     height: auto;
-    border-radius: 50%;
     margin-right: 40px;
-    margin-top: 10px;
+    margin-top: 0px;
     margin-bottom: 10px;
     margin-right: 10px;
     margin-left: 10px;
@@ -120,13 +107,20 @@ don't continue here, doesnt make sense...
     flex: 1 1 100px;
 }
 
+.profile-info {
+    margin-top: 100px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
 .page-header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
     padding: 20px;
-    border-bottom: lightgray 1px solid;
+    border-bottom: rgb(255, 255, 255) 1.5px solid;
 }
 
 .page-header__item {
@@ -150,7 +144,7 @@ don't continue here, doesnt make sense...
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 100%;
 }
 
 .page-footer {
@@ -167,7 +161,7 @@ don't continue here, doesnt make sense...
 }
 
 a {
-    color: #8fa09d;
+    color: #133006;
 }
 
 a:hover,
@@ -177,7 +171,7 @@ a:focus {
 }
 
 a:visited {
-    color: #1c056e;
+    color: #4d4b4b;
 }
 
 a:active {
@@ -201,7 +195,7 @@ button {
     font-family: inherit;
     /* style button */
     background-color: #357b70;
-    color: #e7f7f6;
+    color: goldenrod;
     text-decoration: none;
     padding: 10px;
     border-radius: 3px;
@@ -277,45 +271,122 @@ button:focus {
 
 .navigation-list li {
     list-style-type: none;
-}
-
-.navigation-list li {
     display: inline-block;
     margin-left: 15px;
 }
 
-.grid {
-    display: -ms-grid;
+.navigation-list {
+    position: relative;
+}
+
+.responsive {
+    max-width: 60%;
+    height: auto;
+}
+
+
+/* work.html */
+
+
+/*
+.grid-container {
+  display: grid;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+.item2 {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+
+.item5 {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+}
+*/
+
+.grid-container {
     display: grid;
+    grid-gap: 10px;
+    background-color: rgba(143, 90, 10, 0.789);
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: left;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.item1 {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+}
+
+.item2 {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+}
+
+.item5 {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+}
+
+
+/* projects.html */
+
+.grid1 {
     -ms-grid-columns: 300px 300px 300px;
     grid-template-columns: 300px 300px 300px;
     -ms-grid-rows: 300px 300px;
     grid-template-rows: 300px 300px;
+    padding: 5em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*repeats 1fr three times */
+    grid-auto-rows: minmax(300px, auto);
+    grid-gap: 8em;
 }
 
-.grid__item {
+.grid1__link {
+    margin-bottom: 0px;
+}
+
+.grid1__item {
     background-color: lightgrey;
     padding: 1em;
 }
 
-.work-section__h1 {
+.work-section1__h1 {
     text-align: center;
 }
 
-.grid {
-    padding: 3em;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1em 1fr 1em 1fr;
-    grid-template-columns: repeat(3, 1fr);
-    /*repeats 1fr three times */
-    grid-auto-rows: minmax(300px, auto);
-    grid-gap: 1em;
+.grid1>div:nth-child(odd) {
+    background-color: lightgrey;
 }
 
-.grid>div:nth-child(odd) {
-    background-color: #a5abb7;
+.grid-container_projects {
+    grid-template-columns: auto auto auto;
 }
+
+
+/* animations */
 
 @media all and (max-width: 500px) {
     .grid {
@@ -324,18 +395,18 @@ button:focus {
     }
 }
 
-@media all and (min-width: 500px) and (max-width: 750px) {
+@media all and (min-width: 500px) and (max-width: 800px) {
     .grid {
         -ms-grid-columns: 1fr 1em 1fr;
         grid-template-columns: 1fr 1fr;
     }
 }
 
-@media all and (max-width: 750px) {
+@media all and (max-width: 800px) {
     .grid {
         grid-gap: 10px;
     }
-    .grid__item:last-child {
+    .grid_item:last-child {
         grid-column: auto / auto;
         grid-row: auto / auto;
     }
@@ -365,17 +436,6 @@ button:focus {
     }
 }
 
-
-/* didn't work for some reason, but theoretically this is an alternative...
-.sun {
-  animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-*/
-
 .sun {
     -webkit-animation: 4s color-change infinite alternate linear;
     animation: 4s color-change infinite alternate linear;
@@ -385,6 +445,9 @@ button:focus {
     from {
         -webkit-transform: translate(0, 50px);
         transform: translate(0, 50px);
+        -moz-transform: translate(0, 50px);
+        -ms-transform: translate(0, 50px);
+        -o-transform: translate(0, 50px);
     }
     to {
         -webkit-transform: translate(200px, 50px);
@@ -415,13 +478,6 @@ button:focus {
     -webkit-animation-timing-function: linear;
     animation-timing-function: linear;
 }
-
-
-/* alternatively
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
-}
-*/
 
 @-webkit-keyframes cloud-move-reverse {
     from {
@@ -458,19 +514,11 @@ button:focus {
     animation-timing-function: linear;
 }
 
-
-/*
-Colors to use in future
-https://www.w3schools.com/cssref/css_colors.asp
-Text Color (Dark Gray): #2b2b2b;
-Primary Color (Purple): #357b70;
-Secondary Color (Orange): #e0b354;
-AntiqueWhite (Sandish): #FAEBD7;
-Black #000000;
-BurlyWood (light cream brown): #DEB887;
-DarkSlateBlue (Dark purple) #483D8B;
-ForestGreen #228B22;
-LightBlue #ADD8E6;
-Mediumurquoise #48D1CC;
-
- */
+.animate__animated animate__bounce {
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: bounce;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+    /* don't forget to set a duration! */
+}
