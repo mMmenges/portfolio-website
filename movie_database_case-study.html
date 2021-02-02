@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Michael Menges | CASE STUDY</title>
+	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="32x32" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="css/style.production.css" />
+</head>
+
+<body class="case-body">
+	<header class="case-header">
+		<nav class="navbar navbar-expand-lg navbar-light bg-custom fixed-top">
+			<a class="navbar-brand" href="index.html">
+				<h1>Michael Menges</h1>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"> <a class="nav-link" href="projects.html">PROJECTS</a>
+					</li>
+					<li class="nav-item"> <a class="nav-link" href="about.html">ABOUT</a>
+					</li>
+					<li class="nav-item"> <a class="nav-link" href="contact.html">CONTACT</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<br>
+	<br>
+	<h1>
+            Case Study about myFlix! - Movie Database full-stack project
+        </h1>
+	<div class="intro">
+		<div class="case-info">
+			<section>
+				<div class="intro">
+					<div class="intro-content">
+						<h2>Overview</h2>
+						<p>This web application was developed using the MERN stack.
+							<br>It gives users access to information about different movies,
+							<br>directors, and genres. Users can sign up, update their personal
+							<br>information, and create a list of their favorite movies.</p>
+						<br>
+						<br>
+						<br>
+						<h2> Purpose & Context</h2>
+						<p>The Movie Database was part of the web development course
+							<br>at CareerFoundry and demonstrates me mastering the<br>
+							full-stack JavaScript development.</p>
+						<br>
+						<br>
+						<br>
+						<h2> Objective</h2>
+						<p>My goal was to create a challenging full-stack project
+							<br>that I can add to my professional portfolio.
+							<br>Therefore, for this application, I built from scratch both<br>
+							the complete server-side and client-side.
+						<div class="intro-img">
+							<img src="./img/database_full1.png" alt="screenshot of movie list" />
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+	<br>
+	<br>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<section>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<h2 class="approach-title">Approach</h2>
+		
+		<br>
+		<div class="server-side">
+			<div class="server-content">
+                                <h3>Server-Side</h3>
+                <br>
+				<p>At first I created a RESTful API by using NodeJS and Express.
+					<br>The API interacts with a non-relational database (MongoDB).
+					<br>The HTTP methods like GET, POST, etc. are used to access the API.
+					<br>For retrieving data and storing it in the database, CRUD methods are used.
+					<br>The movie information is provided by the API in JSON format.</p>
+				<br />
+				<p>In order to test the API, I used Postman. Then I included a user authentication
+					<br>and authorization code, using basic HTTP authentication and JWT authentication.</p>
+			</div>
+            <div class="server-img">
+                <img src="./img/postman_unauthorized.png" alt="postman_unauthorized">
+                <br><br><br>
+                <img src="./img/postman_authorized.png" alt="postman_authorized">
+            </div>	
+		</div>
+    </section>
+    
+    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>
+	<div  class="client-side">
+		<div class="client-content">
+			<h3>Client-Side</h3>
+			<p>After I had completed the API, I started working on the interface, that users would need when making requests to and receiving responses from, the server-side.
+				<br>This single-page-application (SPA) is responsive and developed with React and React-Redux.
+				<br>It comes with different interface views, such as
+				<br>> login view, registration view, profile view (here the users can update their user data and list of favorites)
+				<br>> mainview/overview that shows all the complete list of all movies
+				<br>> movie view, that provides data about a single movie, the user can optionally add this movie to their favorites' list
+				<br>
+			</p>
+			<div class="client-img_row">
+				<div class="column">
+					<img src="./img/loginview.png" alt="logingview" style="width:100%">
+				</div>
+				<div class="column">
+					<img src="./img/movieview.png" alt="movieview" style="width:100%">
+				</div>
+				<div class="column">
+					<img src="./img/profileview.png" alt="profileview" style="width:100%">
+				</div>
+			</div>
+		</div>
+		<div class="challenges">
+			<h2>Challanges</h2>
+			<p>This was my most challenging project. It took my quite a while, but with the help of my great mentor, it went really well. After I changed from Terminal to MongoDB Atlas, I really made progress editing my Database on the client-side; in the beginning I had some trouble understanding how React and Redux work. This project took a lot of effort and some mentor calls.</p>
+		</div>
+		<br>
+		<br>
+		<div class="duration">
+			<h2>Duration</h2>
+			<p>This project took me way longer than estimated, as I was still learning how to learn. With the guidance of my tutor and mentor, I was able to get the project completed.</p>
+		</div>
+	</div>
+	</div>
+	<section>
+		<br>
+		<div class="credits">
+			<h2>Credits</h2>
+			<div>Role: Lead Developer</div>
+			<div>Tutor: Ebere Iweala</div>
+			<div>Mentor: Akunna Nwosu</div>
+
+        </div>
+	</section>
+	<br>
+	<br>
+	<div class="conclusion">
+	<p>
+		This project also showed me, how essential it is, to stay focussed at all levels, all the time.
+		When I completed this project I was very happy and proud; and, to be honest, also relieved.
+		For the future I am planning to add some more movies and further information about the directors and actors. 
+	   </p>
+	</div>
+	<br>
+	<br>
+	<div class="project-link">
+        <a href="https://github.com/mMmenges/Movie-Database" class="project-link" target="_blank">CODE</a>
+		<a href="https://oldmyflix-api.herokuapp.com/client/" class="project-link" target="_blank">LIVE</a>
+		<a href="projects.html" class="project-link" target="_blank">BACK</a>
+	</div>
+	<br>
+	<br>
+	<footer class="page-footer">
+            <p>Find me on</p>
+            <div class="social-media">
+                <a href="https://github.com/mMmenges" target="_blank"><img src="img/github.svg" alt="GitHub" height="30" width="30" /></a>
+
+                <a href="https://twitter.com/michaelmenges17" target="_blank"><img src="img/twitter.svg" alt="Twitter" height="30" width="30" /></a>
+
+                <a href="https://de.linkedin.com/in/michael-menges-7323bb143/en?trk=people-guest_people_search-card" target="_blank"><img src="img/linkedin.svg" height="30" width="30" alt="Linkedin" /></a>
+            </div>
+    </footer>
+	<br />
+	<br />
+	<script src="js/tota11y.min.js"></script>
+</body>
